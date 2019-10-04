@@ -1,8 +1,18 @@
 import React, { Component } from 'react';
+import PlayerCard from './components/PlayerCard';
+import Navbar from './components/Navbar';
+import styled from 'styled-components';
 import axios from 'axios';
 import './App.css';
 
-
+const CardContainer = styled.div`
+  display:flex;
+  flex-wrap:wrap;
+  width:80%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center
+`;
 
 class App extends Component {
   constructor(props){
@@ -30,7 +40,13 @@ class App extends Component {
   render() {
     return (
       <div className='App'>
+        <Navbar />
         <h1>Soccer Player Tracker</h1>
+        <CardContainer>
+          {this.state.data.map(player => (
+            <PlayerCard key={player.id} data={player}/>  
+          ))}
+          </CardContainer>
       </div>
     )
   }
@@ -38,3 +54,7 @@ class App extends Component {
 
 export default App
 
+// response.data.name
+// response.data.id
+// response.data.country
+// response.data.searches
