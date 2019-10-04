@@ -31,3 +31,13 @@
     transform: rotate(360deg);
   }
 }
+
+.light-mode {
+  color: black; 
+  background-color: white;
+}
+
+.dark-mode {
+  color: white;
+  background-color: black;
+}
