@@ -20,14 +20,14 @@ it('renders the navbar button', async ()=>{
 
 
 // test('loads cards', async () => {
-//   const cardRender = rtl.render(
+//   const cardRender = await rtl.render(
 //         <PlayerCard />
 //   );
 // })
 
 
 // it('renders the player cards', ()=>{
-//   const cardRender = rtl.render(
+//   const cardRender = await rtl.render(
 //     <PlayerCard />
 //   );
 //   // console.log(cardRender.debug());

@@ -3,6 +3,13 @@ import useDarkMode from '../hooks/useDarkMode';
 import styled from 'styled-components';
 
 
+const ButtonContainer = styled.div`
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin: 2%;
+`;
+
 const Navbar = (props) => {
     console.log(props)
     
@@ -18,9 +25,9 @@ const Navbar = (props) => {
 
 
     return (
-        <div>
+        <ButtonContainer>
             <button data-testid='navbutton' onClick={darkToggle}>Dark Mode</button>        
-        </div>
+        </ButtonContainer>
     )
 }
 
