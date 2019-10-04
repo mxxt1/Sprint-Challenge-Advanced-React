@@ -6,21 +6,23 @@ const Card = styled.div`
     display:flex;
     flex-direction: column;
     width: 30%;
+    min-height:300px;
     border: 2px solid black;
     padding: 2%;
     margin: 2%;
-    background-color: gray;
+    background-color: rgba(160,160,160,.4);
 `;
+
 
 
 const PlayerCard = (props) => {
     console.log(props);
-    return (
+    return ( 
         <Card>
             <h1>{props.data.name}</h1>
-            <p>{props.data.id}</p>
-            <p>{props.data.country}</p>
-            <h3>{props.data.searches}</h3>
+            <h3>Searches: {props.data.searches}</h3>
+            <p>Country: {props.data.country}</p>
+            <p>ID: {props.data.id}</p>
         </Card>
     );
 //end Playercard

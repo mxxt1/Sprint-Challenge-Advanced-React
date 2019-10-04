@@ -41,7 +41,6 @@ class App extends Component {
     return (
       <div className='App'>
         <Navbar />
-        <h1>Soccer Player Tracker</h1>
         <CardContainer>
           {this.state.data.map(player => (
             <PlayerCard key={player.id} data={player}/>  

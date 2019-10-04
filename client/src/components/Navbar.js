@@ -10,6 +10,20 @@ const ButtonContainer = styled.div`
     margin: 2%;
 `;
 
+const NavContainer = styled.div`
+    display:flex;
+    justify-content: space-between;
+    border-bottom: 4px solid rgba(160,160,160,.4);
+    margin-bottom: 1.5%;
+    padding: 0 2% 0 2%;
+`;
+
+const StyledH2 = styled.h2`
+    margin: 2%;
+    margin-left: 
+
+`;
+
 const Navbar = (props) => {
     console.log(props)
     
@@ -25,9 +39,12 @@ const Navbar = (props) => {
 
 
     return (
+    <NavContainer> 
+        <StyledH2>Women's World Cup <br></br>Player Search Tracker</StyledH2>
         <ButtonContainer>
             <button data-testid='navbutton' onClick={darkToggle}>Dark Mode</button>        
         </ButtonContainer>
+    </NavContainer> 
     )
 }
 
