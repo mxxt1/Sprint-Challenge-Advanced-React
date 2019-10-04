@@ -13,7 +13,20 @@ const useDarkMode = (initialValue) => {
         }
     }, [darkMode])//useEffect
 
+    // useEffect(() => {
+    //     if (darkMode) {
+    //         document.querySelector('Card').classList.add('dark-card');
+    //     } else {
+    //         document.querySelector('Card').classList.remove('dark-card');
+    //     }
+    // }, [darkMode])//useEffect
+
     return [darkMode, setDarkMode]
 }
 
 export default useDarkMode
+
+
+
+
+

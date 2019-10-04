@@ -19,7 +19,7 @@ const Navbar = (props) => {
 
     return (
         <div>
-            <button onClick={darkToggle}>Dark Mode</button>        
+            <button data-testid='navbutton' onClick={darkToggle}>Dark Mode</button>        
         </div>
     )
 }

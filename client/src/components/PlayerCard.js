@@ -9,6 +9,7 @@ const Card = styled.div`
     border: 2px solid black;
     padding: 2%;
     margin: 2%;
+    background-color: gray;
 `;
 
 
